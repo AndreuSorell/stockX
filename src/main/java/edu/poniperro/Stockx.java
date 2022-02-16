@@ -1,5 +1,8 @@
 package edu.poniperro;
 
+import edu.poniperro.item.Item;
+import edu.poniperro.item.Sneaker;
+
 /**
  * StockX nació en Detroit, y allí siguen haciendo
  * las cosas a la manera tradicional, 
@@ -31,8 +34,8 @@ public class Stockx {
          * de la zapatilla han de printarse.
          */
 
-        /* Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
-        System.out.println(Stockx.draw(sneaker)); */
+        Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
+        System.out.println(Stockx.draw(sneaker));
 //2a hist
         /**
          * Crear bids
@@ -229,7 +232,7 @@ public class Stockx {
         
     }
 
-    /* public static String draw(Item sneaker) {
+    public static String draw(Item sneaker) {
         return
         "\n\n\t\t" + sneaker.getAsk() + " Buy\t" 
         + sneaker.getBid() + " Sell \n" +  
@@ -243,5 +246,5 @@ public class Stockx {
         
         "\t" + sneaker.toString() + "\n" +
         "\t\tlast sale: " + sneaker.getSale();
-    } */
+    }
 }
