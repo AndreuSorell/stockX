@@ -1,5 +1,6 @@
 package edu.poniperro;
 
+import edu.poniperro.item.Ask;
 import edu.poniperro.item.Bid;
 import edu.poniperro.item.Item;
 import edu.poniperro.item.Sneaker;
@@ -57,12 +58,12 @@ public class Stockx {
          * en sus offers.
          */
 
-        /* Ask ask = new Ask("13", 288);
+        Ask ask = new Ask("13", 288);
         sneaker.add(ask);
         sneaker.add(new Ask("6", 600));
         sneaker.add(new Ask("9.5", 333));
         sneaker.add(new Ask("9.5", 340));
-        sneaker.add(new Ask("13", 330)); */
+        sneaker.add(new Ask("13", 330));
 //4a hist
         /**
          * Crear el filtro "Bids" que filtra
