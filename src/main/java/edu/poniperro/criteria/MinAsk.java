@@ -9,6 +9,9 @@ import edu.poniperro.item.Offer;
 
 public class MinAsk implements Criteria {
 
+    public MinAsk() {
+    }
+
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
         Optional<Offer> min = sneaker.offers().stream()

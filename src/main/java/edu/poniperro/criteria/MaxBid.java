@@ -9,6 +9,9 @@ import edu.poniperro.item.Offer;
 
 public class MaxBid implements Criteria {
 
+    public MaxBid() {
+    }
+
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
         Optional<Offer> max = sneaker.offers().stream()
