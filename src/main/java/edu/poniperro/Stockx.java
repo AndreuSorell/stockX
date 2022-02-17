@@ -1,10 +1,15 @@
 package edu.poniperro;
 
+import java.util.List;
+
+import edu.poniperro.criteria.Asks;
 import edu.poniperro.criteria.Bids;
 import edu.poniperro.criteria.Criteria;
+import edu.poniperro.criteria.MaxBid;
 import edu.poniperro.item.Ask;
 import edu.poniperro.item.Bid;
 import edu.poniperro.item.Item;
+import edu.poniperro.item.Offer;
 import edu.poniperro.item.Sneaker;
 
 /**
@@ -83,9 +88,9 @@ public class Stockx {
          * offers de la zapatilla. 
          */
 
-        /* Criteria asks = new Asks();
+        Criteria asks = new Asks();
         System.out.println("\n\t\t All ASKS");
-        asks.checkCriteria(sneaker).forEach(System.out::print); */
+        asks.checkCriteria(sneaker).forEach(System.out::print);
 //6a hist
         /**
          * Muestra la bid maxima
@@ -100,10 +105,10 @@ public class Stockx {
          * propiedad bid de sneaker.
          */
 
-        /* Criteria maxBid = new MaxBid();
+        Criteria maxBid = new MaxBid();
         List<Offer> maximum = maxBid.checkCriteria(sneaker);
         sneaker.setBid(maximum.isEmpty()? 0 : maximum.get(0).value());
-        System.out.println(Stockx.draw(sneaker)); */
+        System.out.println(Stockx.draw(sneaker));
 //7a hist
         /**
          * Muestra la ask minima
