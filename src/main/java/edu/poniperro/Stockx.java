@@ -5,12 +5,15 @@ import java.util.List;
 import edu.poniperro.criteria.Asks;
 import edu.poniperro.criteria.Bids;
 import edu.poniperro.criteria.Criteria;
+import edu.poniperro.criteria.LastSale;
 import edu.poniperro.criteria.MaxBid;
 import edu.poniperro.criteria.MinAsk;
+import edu.poniperro.criteria.Sales;
 import edu.poniperro.item.Ask;
 import edu.poniperro.item.Bid;
 import edu.poniperro.item.Item;
 import edu.poniperro.item.Offer;
+import edu.poniperro.item.Sale;
 import edu.poniperro.item.Sneaker;
 
 /**
@@ -137,12 +140,12 @@ public class Stockx {
          * a mas reciente.
          */
 
-        /* Sale sale = new Sale("6", 356);
+        Sale sale = new Sale("6", 356);
         sneaker.add(sale);
         sneaker.add(new Sale("9.5", 352));
         sneaker.add(new Sale("9.5", 404));
         sneaker.add(new Sale("13", 360));
-        sneaker.add(new Sale("13", 372)); */
+        sneaker.add(new Sale("13", 372));
 //9a hist
         /**
          * Crear el filtro "Sales" que filtra
@@ -150,9 +153,9 @@ public class Stockx {
          * offers de la zapatilla.
          */
 
-        /* Criteria sales = new Sales();
+        Criteria sales = new Sales();
         System.out.println("\n\t\t All SALES");
-        sales.checkCriteria(sneaker).forEach(System.out::print); */
+        sales.checkCriteria(sneaker).forEach(System.out::print);
 //10a hist        
         /**
          * Crea un filtro que devuelva
@@ -161,11 +164,11 @@ public class Stockx {
          * en sneaker).
          */
         
-        /* Criteria lastSale = new LastSale();
+        Criteria lastSale = new LastSale();
         
         List<Offer> actualSale = lastSale.checkCriteria(sneaker);
         sneaker.setSale(actualSale.isEmpty()? 0 : actualSale.get(0).value());
-        System.out.println(Stockx.draw(sneaker)); */
+        System.out.println(Stockx.draw(sneaker));
 //11a hist
         /**
          * Mostrar info de la zapatilla 
