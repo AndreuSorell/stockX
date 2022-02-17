@@ -6,6 +6,7 @@ import edu.poniperro.criteria.Asks;
 import edu.poniperro.criteria.Bids;
 import edu.poniperro.criteria.Criteria;
 import edu.poniperro.criteria.MaxBid;
+import edu.poniperro.criteria.MinAsk;
 import edu.poniperro.item.Ask;
 import edu.poniperro.item.Bid;
 import edu.poniperro.item.Item;
@@ -123,10 +124,10 @@ public class Stockx {
          * ask de sneaker.
          */
 
-        /* Criteria minAsk = new MinAsk();
+        Criteria minAsk = new MinAsk();
         List<Offer> minimum = minAsk.checkCriteria(sneaker);
         sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
-        System.out.println(Stockx.draw(sneaker)); */
+        System.out.println(Stockx.draw(sneaker));
 //8a hist
         /**
          * Añade ventas (sales) de 
